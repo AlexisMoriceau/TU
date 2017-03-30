@@ -12,6 +12,7 @@ namespace GestionCommande.Tests
     [TestClass]
     class TestProduit
     {
+        //Test vérifiant que l'ajout de projet est fonctionnel
         [TestMethod]
         public void AjoutProduitOK()
         {
@@ -21,6 +22,7 @@ namespace GestionCommande.Tests
             Assert.AreEqual(12, controler.GetProduits().Last().Prix);
         }
 
+        //Test vérifiant que l'ajout de client est fonctionnel
         [TestMethod]
         public void AjoutClientOK()
         {
@@ -31,6 +33,7 @@ namespace GestionCommande.Tests
             Assert.AreEqual("alexis.moriceau@epsi.fr", control.GetClients().Last().Mail);
         }
 
+        //Test qui vérifie que l'ajout de commande fonctionne
         [TestMethod]
         public void AjoutCommandeOK()
         {
